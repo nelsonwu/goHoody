@@ -1,0 +1,160 @@
+/*
+    anythingSlider v1.2
+    
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+.anythingSlider                         { width: 940px; height: 370px; position: relative; margin: 0px auto 55px 0;}
+.anythingSlider .wrapper                { width: 940px; overflow: auto; height: 370px; margin: 20px auto; position: 
+										  absolute; top: 0; left: 0; }
+										  
+										
+							
+
+                                        /* Width below is max for Opera */
+.anythingSlider .wrapper ul             { width: 32700px; list-style: none; position: absolute; top: 0; left: 0; margin: 5px auto; }
+.anythingSlider .wrapper ul li          { display: block; float: left; padding: 10px 0px 5px 0px; height: 320px; width: 940px; margin:0; }
+
+
+
+
+.thumbNav                               { position:absolute; text-align:center; margin: 390px auto auto auto; width: 940px; z-index: 99; }
+.thumbNav li                            { display: inline; }
+.thumbNav a                             { display: inline-block; text-align:center;   
+										  height: 14px; width: 14px; margin: 2px 2px 0 8px; text-decoration:none; cursor: pointer; 
+										  background: #CCC;
+										  -moz-box-shadow: inset 1px 1px 5px #999;
+										  -webkit-box-shadow: inset 1px 1px 5px #999;
+										  box-shadow: inset 1px 1px 5px #999;
+										  -moz-border-radius:7px;
+										  -webkit-border-radius:7px;
+										  border-radius:7px;
+										 
+										  border-color:#DEDEDE;}
+
+
+.thumbNav a:hover                       { color:#9d9c9c; text-decoration:none; }
+.thumbNav a:active  					{ text-decoration:none; } 
+.thumbNav a.cur                         { background:#d0bda4;
+										  -moz-box-shadow: inset 1px -1px 5px #999;
+										  -webkit-box-shadow: inset 1px -1px 5px #999;
+										  box-shadow: inset 1px -1px 5px #999; }
+
+.start-stop                             { display: none; /*z-index: 10; background: green; background-image: url(../attachements/slider/cellshade.png); background-repeat: repeat-x; color: white; padding: 2px 5px; width: 40px; text-align: center; position: absolute; right: 45px; top: 323px; -moz-border-radius-bottomleft: 5px; -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px;*/ }
+/*.start-stop.playing                     { background-color: red; }
+.start-stop:hover                       { background-image: none; }*/
+
+/*
+  Prevents
+*/
+.anythingSlider .wrapper ul ul          { position: static; margin: 0; background: none; overflow: visible; width: auto; border: 0; }
+.anythingSlider .wrapper ul ul li       { float: none; height: auto; width: auto; background: none; }
+
+#tiles{
+	
+	
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+
+/*style for picture tiles*/
+
+/*Slide 1*/
+
+#landscape1{
+	width: 405px;
+	height: 320px;
+	float: left;
+	margin: 5px 12px 5px 5px;
+	
+	
+	
+}
+	.landscape_pic{
+		height: 299px;
+		background: #FFF;
+		border: #CACACA 1px solid;
+	}
+	.landscape_shadow{
+		margin-top: -2px;
+	}
+
+.small_top{
+	width: 240px;
+	float: left;
+	margin: 5px 5px 0px 5px;
+}
+
+	.small_top_pic{
+		height: 140px; 
+		background: #FFF;
+		border: #CACACA 1px solid;
+	}
+
+#portrait1{
+	width: 253px;
+	float: right;
+	margin: 5px 5px 5px 3px;
+}
+
+	.portrait_pic{
+		height: 299px;
+		background: #FFF;
+		
+		border: #CACACA 1px solid;
+	}
+		
+
+.small_bottom{
+	width: 240px;
+	float: left;
+	margin: 14px 5px 5px 5px;
+}
+	.small_bottom_pic{
+		height: 137px;
+		background: #FFF;
+		border: #CACACA 1px solid;
+	}
+		
+
+/*Slide 2*/
+
+#landscape2{
+	width: 405px;
+	float: left;
+	margin: 5px 2px 5px 5px;
+	
+}
+
+
+#portrait2{
+	width: 246px;
+	float: left;
+	margin: 5px 2px 5px 5px;
+	
+}
+
+/*Slide 3*/
+
+#landscape3{
+	width: 405px;
+	float: right;
+	margin: 5px 5px 5px 2px;
+	
+}
+
+
+#portrait3{
+	width: 253px;
+	float: right;
+	margin: 5px 14px 5px 2px;
+	
+}
+
+
+
+
+

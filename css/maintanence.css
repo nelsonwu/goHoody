@@ -1,0 +1,63 @@
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	font-size:14px;
+	width: 980px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+#bubble1 {
+	display:none;
+	position:absolute;
+	margin: -10px auto auto 580px;
+}
+#bubble2 {
+	display:none;
+	position:absolute;
+	margin: -16px auto auto 580px;
+}
+
+#msg {
+	
+	-moz-box-shadow: 5px 5px 5px #E5E5E5;
+	-webkit-box-shadow: 5px 5px 5px #E5E5E5;
+	box-shadow: 5px 5px 5px #E5E5E5;
+
+	background-color:#E5FFCB;
+	background-image:url('../attachements/bg_green.jpg');
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:2px solid #D9D9D9;
+	display:inline-block;
+	color:#505050;
+	
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:14px 20px;
+	text-decoration:none;
+}
+
+#msg1{
+	font-size:18px;
+}
+
+#msg2{
+	margin-top:10px;
+}
+
+#logo{
+	width: auto;
+	height: 110px;
+	margin:40px auto 15px 0;
+	
+}
+#logo_img{
+	border-style: none;
+}

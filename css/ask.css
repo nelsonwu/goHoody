@@ -1,0 +1,287 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: normal;
+	
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	
+	
+	font-size: 12px;
+	width: 100%;
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color:#f5f5f5;
+	background:url(http://img.gohoody.com/attachements/pagebg.png);
+	background-repeat:repeat-x repeat-y;
+	z-index:-998;
+	
+}
+
+#content{
+	font-family:'Open Sans', Arial, Helvetica, sans-serif;
+	color:#555;
+	width:940px; 
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	padding-left:20px;
+	padding-right:20px;
+
+	clear: both;
+	overflow: hidden;
+}
+
+
+
+#top_sect{
+	width: 940px;
+	height: 310px;
+	
+	
+}
+
+	#justask_logo{
+		width: 190px;
+		height: 233px;
+		margin: 10px auto auto 380px;
+		
+	}
+	
+	#q1{
+		color: #999;
+		font-size:13px;
+		font-style:italic;
+		position: absolute;
+		top: 0;
+		margin: 165px auto auto 100px;
+	}
+	
+	#q2{
+		color: #999;
+		font-size:13px;
+		font-style:italic;
+		position: absolute;
+		top: 0;
+		margin: 220px auto auto 5px;
+	}
+	
+	#q3{
+		color: #999;
+		font-size:13px;
+		font-style:italic;
+		position: absolute;
+		top: 0;
+		margin: 275px auto auto 120px;
+	}
+	
+	#q4{
+		color: #999;
+		font-size:13px;
+		font-style:italic;
+		position: absolute;
+		top: 0;
+		margin: 165px auto auto 600px;
+	}
+	
+	#q5{
+		color: #999;
+		font-size:13px;
+		font-style:italic;
+		position: absolute;
+		top: 0;
+		margin: 220px auto auto 645px;
+	}
+	
+	#q6{
+		color: #999;
+		font-size:13px;
+		font-style:italic;
+		position: absolute;
+		top: 0;
+		margin: 275px auto auto 610px;
+	}
+	
+	
+	#page_title{
+		width: 100%;
+		margin-top: 15px;
+		text-align:center;
+		font-size:20px;
+		color: #333;
+		
+	}
+	b{
+		font-weight:bold;
+		color: #093;
+	}
+
+	
+	
+#info_bar{
+	width:940px;
+	height: 10px;
+	padding-top: 15px;
+	margin: 25px auto 5px auto;
+	border-top: #dedede 1px solid;
+}
+	#info_text{
+		float:left;
+		font-size:14px;
+		font-weight:bold;
+	}
+	#location_text{
+		padding-top: 2px;
+		float:right;
+		font-size: 14px;
+	}
+	#location_dropdown{
+		float:right;
+		margin-left: 10px;
+		margin-right: 15px;
+	}
+	
+#sections{
+	margin-top: 35px;
+}
+
+	.section_box{
+		font-size:12px;
+		width: 170px;
+		height: 160px;
+		float:left;
+		margin-right: 19px;
+		
+		
+	}
+	.box_right{
+		margin-right:0;
+		float:left;
+	
+	}
+	
+	.pic_link img{
+		width:158px;
+		height: 80px;
+	}
+	
+	.pic_wrapper{
+		padding: 5px;
+		-moz-box-shadow: 3px 3px 5px #DEDEDE;
+		-webkit-box-shadow: 3px 3px 5px #DEDEDE;
+		box-shadow: 3px 3px 5px #DEDEDE;
+		border: 1px #ccc solid;
+		margin-bottom: 5px;
+		float:left;
+		
+	}
+	.section_pic{
+		width: 158px;
+		height: 80px;
+	}
+	
+	.section_title{
+		width: 170px;
+		float:left;
+		text-align:center;
+		color: #333;
+		text-decoration:none;
+		
+		
+	}
+		a.section_title:hover{
+			
+			text-decoration:underline;
+			
+		}
+		.section_title:hover{
+			
+			text-decoration: none;
+			
+		}
+		
+
+
+#controls {
+	width: 930px;
+	 
+}
+
+#controls a {
+	cursor: pointer;
+	text-decoration:none;
+	color:#09c;
+}
+  
+#controls a:hover {  
+	color:#0CC;	 
+}  
+	
+#controls a:active {
+	color:#09c;   
+} 
+
+
+
+#foot{
+	margin-top: 40px;
+}
+
+#loadmorebutton{ 
+	width:100%;
+	height:30px; 
+	background: none;
+	padding: 5px;
+	border: #ccc 1px solid;
+	border-top:0;
+	margin:0;
+	cursor:pointer;
+}
+#loadmorebutton:hover{ 
+ 	
+	background: #F0F0F0;
+	
+}
+

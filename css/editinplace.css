@@ -1,0 +1,18 @@
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: small;
+}
+
+.editable, textarea{
+	background-color: #ffffd3;
+}
+
+textarea{
+	width: 95%;
+	font-size: 100%;
+}
+
+img.progress{
+	vertical-align: middle;
+	padding: 0 10px;
+}

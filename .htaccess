@@ -1,0 +1,51 @@
+Options +FollowSymlinks
+RewriteEngine On    																					# Turn on the rewriting engine
+
+RewriteRule    	^about-us/?$    							about_us.php    					[L]		# Handle requests for "about-us" - DONE - TESTED
+RewriteRule    	^welcome/?$    								welcome.php    						[L]    	# Handle requests for "welcome" - DONE - TESTED
+RewriteRule    	^lost/?$    								lost.php    						[L]    	# Handle requests for "lost" - DONE - TESTED
+RewriteRule    	^uoft/?$    								uoft.php    						[L]    	# Handle requests for "welcome" - DONE - TESTED
+RewriteRule    	^UofT/?$    								uoft.php    						[L]    	# Handle requests for "welcome" - DONE - TESTED
+RewriteRule    	^ocadu/?$    								ocadu.php    						[L]    	# Handle requests for "welcome" - DONE - TESTED
+RewriteRule    	^OCADU/?$    								ocadu.php    						[L]    	# Handle requests for "welcome" - DONE - TESTED
+RewriteRule    	^ocad/?$    								ocadu.php    						[L]    	# Handle requests for "welcome" - DONE - TESTED
+RewriteRule    	^OCAD/?$    								ocadu.php    						[L]    	# Handle requests for "welcome" - DONE - TESTED
+RewriteRule    	^FAQ/?$    									FAQ.php    							[L]    	# Handle requests for "welcome" - DONE - TESTED
+
+RewriteRule    	^create/?$    								create.php    						[L]    	# Handle requests for "create" - DONE
+RewriteRule    	^create/([0-9]+)/?$    						create.php?lid=$1    				[L]    	# Handle modifying listing request - DONE
+
+RewriteRule    	^dashboard/?$    							dashboard.php    					[L]    	# Handle requests for "dashboard" - DONE
+RewriteRule    	^dashboard/inactivate/([0-9]+)/?$    		dashboard.php?inactivate=$1    		[L]    	# Handle inactivate listing request - DONE
+RewriteRule    	^dashboard/delete/([0-9]+)/?$    			dashboard.php?delete=$1    			[L]    	# Handle delete listing request - DONE
+RewriteRule    	^dashboard/remove/([0-9]+)/?$    			dashboard.php?remove=$1    			[L]    	# Handle remove listing request - DONE
+
+RewriteRule		^flyer/([0-9]+)/?$    						flyer_with_ui.php?lid=$1    		[L]    	# Handle requests for "flyer"
+RewriteRule    	^print-flyer/([0-9]+)/colour/?$    			flyer_print.php?lid=$1&colour=1    	[L]  	# Handle requests for "print-flyer"
+RewriteRule    	^print-flyer/([0-9]+)/bw/?$    				flyer_print.php?lid=$1&colour=0    	[L]  	# Handle requests for "print-flyer"
+
+RewriteRule    	^review/?$    								review.php    						[L]    	# Handle requests for "review" - DONE
+RewriteRule    	^review/([0-9]+)/?$    						review.php?rid=$1    				[L]    	# Handle service review request - DONE
+
+RewriteRule		^search/?$    								search.php    						[L]    	# Handle requests for "search" - ON HOLD
+RewriteRule		^search/date/?$    							search.php?sort=date    			[L]    	# Handle service search request - ON HOLD
+RewriteRule    	^search/popularity/?$    					search.php?sort=popularity    		[L]    	# Handle service search request - ON HOLD
+RewriteRule    	^search/distance/?$    						search.php?sort=distance    		[L]    	# Handle service search request - ON HOLD
+RewriteRule    	^search/([A-Za-z0-9-]+)/?$    				search.php?q=$1    					[L]    	# Handle service search request - ON HOLD
+RewriteRule    	^search/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$	search.php?sort=$1&q=$2    			[L]    	# Handle delete listing request - ON HOLD
+
+RewriteRule    	^service/?$    								browse.php    						[L]    	# Handle requests for "service" - DONE
+RewriteCond		%{QUERY_STRING} ^([^/\.]+)$
+RewriteRule    	^service/([0-9]+)/$    						service.php?lid=$1&%1    			[L]    	# Handle service request with facebook oauth login url redirect - DONE
+RewriteRule    	^service/([0-9]+)/?$    						service.php?lid=$1    			[L]    	# Handle service request - DONE
+RewriteRule    	^service/([0-9]+)/post-to-facebook/?$    	service.php?lid=$1&facebook=1    	[L]    	# Handle post to facebook request in service page - DONE
+
+RewriteRule    	^profile/?$    								profile.php    						[L]    	# Handle requests for "profile"
+RewriteCond		%{QUERY_STRING} ^([^/\.]+)$
+RewriteRule    	^profile/([A-Za-z0-9-]+)/$    				profile.php?name=$1&%1   			[L]    	# Handle service request with facebook oauth login url redirect - DONE
+RewriteRule    	^profile/([A-Za-z0-9-]+)/?$    				profile.php?name=$1    				[L]    	# Handle user profile request
+
+RewriteRule    	^ask/?$    									ask.php    							[L]    	# Handle requests for "category"
+RewriteCond		%{QUERY_STRING} ^([^/\.]+)$
+RewriteRule    	^ask/([A-Za-z0-9-]+)/$    					category.php?url=$1&%1   			[L]    	# Handle category request with facebook oauth login url redirect - DONE
+RewriteRule    	^ask/([A-Za-z0-9-]+)/?$    					category.php?url=$1    				[L]    	# Handle category request
